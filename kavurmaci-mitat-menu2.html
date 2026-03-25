@@ -155,7 +155,8 @@
 
 <div class="tabs-wrapper">
   <div class="tabs">
-    <button class="tab-btn active"  onclick="showSection('etler',    this)">Et Yemekleri</button>
+    <button class="tab-btn active"  onclick="showSection('gunun',   this)">Günün Menüsü</button>
+    <button class="tab-btn"          onclick="showSection('etler',    this)">Et Yemekleri</button>
     <button class="tab-btn"         onclick="showSection('burger',   this)">Burger & Ekmek</button>
     <button class="tab-btn"         onclick="showSection('corbalar', this)">Çorbalar</button>
     <button class="tab-btn"         onclick="showSection('sebze',    this)">Sebze & Tavuk</button>
@@ -167,8 +168,54 @@
 
 <div class="menu-container">
 
+
+  <!-- GÜNÜN MENÜSÜ -->
+  <div class="menu-section active" id="section-gunun">
+    <div class="section-header">
+      <div class="section-title">Günün Menüleri</div>
+      <div class="section-desc">Pilav + Mercimek Çorbası ile birlikte</div>
+    </div>
+    <div class="items-list">
+      <div class="menu-item">
+        <div class="item-info">
+          <div class="item-name">Kavurma Menü</div>
+          <div class="item-desc">Kavurma + Pilav + Mercimek Çorbası</div>
+        </div>
+        <div class="item-price">₺380</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-info">
+          <div class="item-name">Et Menü</div>
+          <div class="item-desc">Kebap, Köfte vb. + Pilav + Mercimek Çorbası</div>
+        </div>
+        <div class="item-price">₺330</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-info">
+          <div class="item-name">Tavuk Menü</div>
+          <div class="item-desc">Haşlama, Sote vb. + Pilav + Mercimek Çorbası</div>
+        </div>
+        <div class="item-price">₺280</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-info">
+          <div class="item-name">Sebze Menü</div>
+          <div class="item-desc">Fasulye, Nohut vb. + Pilav + Mercimek Çorbası</div>
+        </div>
+        <div class="item-price">₺150</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-info">
+          <div class="item-name">5 Islak Hamburger Menü</div>
+          <div class="item-desc">5 adet ıslak hamburger — 1 tanesi bedava!</div>
+        </div>
+        <div class="item-price">₺400</div>
+      </div>
+    </div>
+  </div>
+
   <!-- ET YEMEKLERİ -->
-  <div class="menu-section active" id="section-etler">
+  <div class="menu-section" id="section-etler">
     <div class="section-header">
       <div class="section-title">Et Yemekleri</div>
       <div class="section-desc">Günlük değişkenlik gösterebilir, lütfen bilgi alınız</div>
@@ -263,6 +310,7 @@
         </div>
         <div class="item-price">₺250</div>
       </div>
+      <div class="menu-item"><div class="item-info"><div class="item-name">Islak Hamburger</div></div><div class="item-price">₺100</div></div>
       <div class="menu-item"><div class="item-info"><div class="item-name">Ekstra Çedar Sos</div></div><div class="item-price">₺40</div></div>
       <div class="menu-item"><div class="item-info"><div class="item-name">Ekstra Patates Kızartması</div></div><div class="item-price">₺60</div></div>
     </div>
@@ -390,3 +438,4 @@
 </script>
 </body>
 </html>
+
